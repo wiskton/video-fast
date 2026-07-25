@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px 60px;
+  background-color: #0e0e10;
+  color: #efeff1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.vf-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 15px;
+  margin: 0 0 14px;
+  color: #bf94ff;
+}
+
+.vf-card {
+  background-color: #17171c;
+  border: 1px solid #2c2c33;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+
+.vf-row {
+  margin-bottom: 14px;
+}
+
+.vf-row label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #efeff1;
+}
+
+.vf-hint {
+  display: block;
+  font-size: 11px;
+  color: #adadb8;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.vf-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.vf-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+  background-color: #0e0e10;
+  color: #efeff1;
+  border: 1px solid #34343a;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 90px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.vf-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vf-btn-primary {
+  border: none;
+  border-radius: 4px;
+  padding: 9px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #9147ff;
+  color: #fff;
+}
+
+.vf-btn-primary:hover {
+  background-color: #772ce8;
+}
+
+.vf-saved-hint {
+  font-size: 12px;
+  color: #3fce4c;
+}
