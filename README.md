@@ -79,6 +79,25 @@ options/                      Página de configurações completa
 lib/browser-api.js            Shim Chrome/Firefox para módulos ES (background/popup/options)
 lib/browser-api.content.js    Mesmo shim, em versão "classic script" para o content script
 icons/                        Ícones gerados localmente (sem dependências externas)
+store-assets/                 Imagens promocionais para a Chrome Web Store (pt-BR/ e en/)
+```
+
+## Publicando na loja
+
+- `store-assets/pt-BR/` e `store-assets/en/` contêm as imagens promocionais da Chrome
+  Web Store nos tamanhos exigidos:
+  - `screenshot-1280x800.png` — captura de tela / imagem principal (1280×800);
+  - `small-tile-440x280.png` — ícone promocional pequeno (440×280);
+  - `marquee-1400x560.png` — imagem promocional grande / marquee (1400×560).
+- Os arquivos `.zip` prontos para upload ficam em `dist/` (não versionados no git —
+  gere novamente quando precisar, veja abaixo).
+
+Para gerar os `.zip` de distribuição (Chrome e Firefox):
+
+```sh
+mkdir -p dist
+zip -r dist/video-fast-chrome.zip manifest.json background content lib options popup icons
+zip -r dist/video-fast-firefox.zip manifest.json background content lib options popup icons
 ```
 
 ## Permissões usadas
@@ -107,3 +126,4 @@ Todas as configurações ficam em `chrome.storage.local`, local à sua instalaç
   visualizador de áudio), o ganho de volume da extensão pode não funcionar nesse
   vídeo específico, já que um elemento de mídia só pode ser conectado a um
   `MediaElementSourceNode` por vez.
+c
