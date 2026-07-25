@@ -1,4 +1,5 @@
 import { storage } from "../lib/browser-api.js";
+import { t, applyI18n } from "../lib/i18n.js";
 
 const els = {
   enabledToggle: document.getElementById("enabledToggle"),
@@ -39,10 +40,12 @@ async function saveVideoSettings() {
 
   els.speedInput.value = String(speed);
   els.volumeInput.value = String(volumeGain);
-  els.videoSavedHint.textContent = "Salvo!";
+  els.videoSavedHint.textContent = t("optionsSavedHint");
   setTimeout(() => (els.videoSavedHint.textContent = ""), 1500);
 }
 
 els.saveVideoBtn.addEventListener("click", saveVideoSettings);
 
+document.title = t("optionsPageTitle");
+applyI18n();
 loadVideoSettings();

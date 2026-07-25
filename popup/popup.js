@@ -1,4 +1,5 @@
 import { ext, storage, tabs } from "../lib/browser-api.js";
+import { t, applyI18n } from "../lib/i18n.js";
 
 const els = {
   enabledToggle: document.getElementById("enabledToggle"),
@@ -29,13 +30,16 @@ function updateStatusHint() {
     return;
   }
   const ignored = isIgnored(currentHostname, settings.vf_ignoreList);
-  els.toggleIgnoreBtn.textContent = ignored ? "Parar de ignorar" : "Ignorar";
+  els.toggleIgnoreBtn.textContent = t(ignored ? "popupUnignoreBtn" : "popupIgnoreBtn");
   if (!settings.vf_enabled) {
-    els.statusHint.textContent = "A extensão está desativada.";
+    els.statusHint.textContent = t("popupStatusDisabled");
   } else if (ignored) {
-    els.statusHint.textContent = "Este site está na lista de exceções.";
+    els.statusHint.textContent = t("popupStatusIgnored");
   } else {
-    els.statusHint.textContent = `Vídeos serão acelerados em ${settings.vf_defaultSpeed}x, volume em ${settings.vf_volumeGain}%.`;
+    els.statusHint.textContent = t("popupStatusActive", [
+      String(settings.vf_defaultSpeed),
+      String(settings.vf_volumeGain),
+    ]);
   }
 }
 
@@ -122,6 +126,7 @@ els.openOptionsBtn.addEventListener("click", () => {
 });
 
 (async function init() {
+  applyI18n();
   await Promise.all([loadSettings(), loadCurrentTab()]);
   updateStatusHint();
 })();

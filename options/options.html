@@ -1,26 +1,28 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Video Fast — Configurações</title>
+    <title>Video Fast — Settings</title>
     <link rel="stylesheet" href="options.css" />
   </head>
   <body>
     <div class="vf-wrap">
-      <h1>⚡ Video Fast — Configurações</h1>
+      <h1 data-i18n="optionsHeading">⚡ Video Fast — Settings</h1>
 
       <section class="vf-card">
-        <h2>Velocidade e volume de vídeo</h2>
+        <h2 data-i18n="optionsSectionTitle">Video speed and volume</h2>
 
         <div class="vf-row">
           <label class="vf-checkbox">
             <input type="checkbox" id="enabledToggle" />
-            Ativar aceleração automática de vídeos
+            <span data-i18n="optionsEnableLabel">Enable automatic video speed-up</span>
           </label>
         </div>
 
         <div class="vf-row">
-          <label for="speedInput">Velocidade padrão aplicada a todos os vídeos</label>
+          <label for="speedInput" data-i18n="optionsSpeedLabel">
+            Default speed applied to all videos
+          </label>
           <div class="vf-inline">
             <input type="number" id="speedInput" min="0.1" max="16" step="0.05" />
             <span>x</span>
@@ -29,10 +31,10 @@
 
         <div class="vf-row">
           <label for="volumeInput">
-            Ganho de volume
-            <span class="vf-hint">
-              100% = volume normal do vídeo. Acima de 100% amplifica o áudio além do máximo
-              nativo do navegador (via Web Audio API).
+            <span data-i18n="optionsVolumeLabel">Volume gain</span>
+            <span class="vf-hint" data-i18n="optionsVolumeHint">
+              100% = normal video volume. Above 100% amplifies audio beyond the browser's native
+              max (via the Web Audio API).
             </span>
           </label>
           <div class="vf-inline">
@@ -43,18 +45,19 @@
 
         <div class="vf-row">
           <label for="ignoreListArea">
-            Sites ignorados (um por linha)
-            <span class="vf-hint">
-              Aceita domínio ("exemplo.com"), curinga ("*.exemplo.com") ou trecho de URL
-              ("exemplo.com/caminho"). Nesses sites nem a velocidade nem o ganho de volume são
-              alterados.
+            <span data-i18n="optionsIgnoreListLabel">Ignored sites (one per line)</span>
+            <span class="vf-hint" data-i18n="optionsIgnoreListHint">
+              Accepts a domain ("example.com"), a wildcard ("*.example.com"), or a URL snippet
+              ("example.com/path"). Neither speed nor volume gain is changed on these sites.
             </span>
           </label>
-          <textarea id="ignoreListArea" rows="8" placeholder="twitch.tv&#10;kick.com&#10;*.outroexemplo.com"></textarea>
+          <textarea id="ignoreListArea" rows="8" placeholder="twitch.tv&#10;kick.com&#10;*.example.com"></textarea>
         </div>
 
         <div class="vf-row vf-actions">
-          <button type="button" id="saveVideoBtn" class="vf-btn-primary">Salvar</button>
+          <button type="button" id="saveVideoBtn" class="vf-btn-primary" data-i18n="optionsSaveBtn">
+            Save
+          </button>
           <span id="videoSavedHint" class="vf-saved-hint"></span>
         </div>
       </section>

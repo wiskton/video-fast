@@ -1,4 +1,5 @@
 import { ext, storage } from "../lib/browser-api.js";
+import { t } from "../lib/i18n.js";
 
 const DEFAULT_SETTINGS = {
   vf_enabled: true,
@@ -34,14 +35,14 @@ async function updateBadge() {
   if (vf_enabled === false) {
     await ext.action.setBadgeText({ text: "OFF" });
     await ext.action.setBadgeBackgroundColor({ color: "#53535f" });
-    await ext.action.setTitle({ title: "Video Fast — desativado" });
+    await ext.action.setTitle({ title: t("badgeDisabledTitle") });
     return;
   }
 
   const badgeText = formatSpeedBadge(speed);
   await ext.action.setBadgeText({ text: badgeText });
   await ext.action.setBadgeBackgroundColor({ color: "#9147ff" });
-  await ext.action.setTitle({ title: `Video Fast — velocidade padrão ${speed}x` });
+  await ext.action.setTitle({ title: t("badgeActiveTitle", [String(speed)]) });
 }
 
 storage.onChanged.addListener((changes, area) => {

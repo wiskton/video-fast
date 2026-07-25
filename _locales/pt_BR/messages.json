@@ -1,0 +1,86 @@
+{
+  "extName": {
+    "message": "Video Fast — Velocidade e Volume de Vídeo",
+    "description": "Nome da extensão"
+  },
+  "extDescription": {
+    "message": "Acelera vídeos com velocidade padrão configurável, amplifica o volume além do máximo nativo e permite ignorar sites específicos.",
+    "description": "Descrição da extensão na loja"
+  },
+
+  "popupSpeedLabel": {
+    "message": "Velocidade padrão"
+  },
+  "popupVolumeLabel": {
+    "message": "Ganho de volume"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "Site atual"
+  },
+  "popupIgnoreBtn": {
+    "message": "Ignorar"
+  },
+  "popupUnignoreBtn": {
+    "message": "Parar de ignorar"
+  },
+  "popupMoreOptions": {
+    "message": "Mais opções →"
+  },
+  "popupStatusDisabled": {
+    "message": "A extensão está desativada."
+  },
+  "popupStatusIgnored": {
+    "message": "Este site está na lista de exceções."
+  },
+  "popupStatusActive": {
+    "message": "Vídeos serão acelerados em $SPEED$x, volume em $VOLUME$%.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — Configurações"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — Configurações"
+  },
+  "optionsSectionTitle": {
+    "message": "Velocidade e volume de vídeo"
+  },
+  "optionsEnableLabel": {
+    "message": "Ativar aceleração automática de vídeos"
+  },
+  "optionsSpeedLabel": {
+    "message": "Velocidade padrão aplicada a todos os vídeos"
+  },
+  "optionsVolumeLabel": {
+    "message": "Ganho de volume"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = volume normal do vídeo. Acima de 100% amplifica o áudio além do máximo nativo do navegador (via Web Audio API)."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "Sites ignorados (um por linha)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "Aceita domínio (\"exemplo.com\"), curinga (\"*.exemplo.com\") ou trecho de URL (\"exemplo.com/caminho\"). Nesses sites nem a velocidade nem o ganho de volume são alterados."
+  },
+  "optionsSaveBtn": {
+    "message": "Salvar"
+  },
+  "optionsSavedHint": {
+    "message": "Salvo!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — desativado"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — velocidade padrão $SPEED$x",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

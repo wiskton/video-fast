@@ -35,6 +35,9 @@ código-fonte (JavaScript puro, sem bundler, sem dependências externas).
   removidos a qualquer momento.
 - **Badge no ícone da barra de ferramentas** mostrando a velocidade padrão atual (ex:
   `2x`), ou `OFF` quando a extensão está desativada.
+- **Interface em português, inglês e espanhol**, escolhida automaticamente pelo idioma
+  configurado no navegador (padrão de internacionalização nativo do Chrome/Firefox,
+  arquivos em `_locales/`).
 
 ## Como usar
 
@@ -78,9 +81,26 @@ popup/                        Popup rápido (liga/desliga, velocidade, volume, i
 options/                      Página de configurações completa
 lib/browser-api.js            Shim Chrome/Firefox para módulos ES (background/popup/options)
 lib/browser-api.content.js    Mesmo shim, em versão "classic script" para o content script
+lib/i18n.js                   Helper de tradução (chrome.i18n.getMessage + data-i18n no DOM)
+_locales/pt_BR|en|es          Strings traduzidas (nome/descrição da extensão e textos da UI)
 icons/                        Ícones gerados localmente (sem dependências externas)
 store-assets/                 Imagens promocionais para a Chrome Web Store (pt-BR/ e en/)
 ```
+
+## Idiomas
+
+A extensão usa o sistema nativo de internacionalização do Chrome/Firefox
+(`chrome.i18n`): o idioma é escolhido automaticamente de acordo com o idioma
+configurado no navegador, sem precisar de um seletor dentro da extensão. Hoje há
+tradução completa (nome/descrição na loja, popup e página de opções) em:
+
+- Português do Brasil (`_locales/pt_BR`)
+- Inglês (`_locales/en`) — idioma padrão de fallback (`default_locale`)
+- Espanhol (`_locales/es`)
+
+Para adicionar outro idioma, crie `_locales/<código>/messages.json` copiando a
+estrutura de `_locales/en/messages.json` e traduzindo o campo `"message"` de cada
+chave (a lista de códigos de idioma aceitos é a mesma usada pelo Chrome Web Store).
 
 ## Publicando na loja
 
@@ -96,8 +116,8 @@ Para gerar os `.zip` de distribuição (Chrome e Firefox):
 
 ```sh
 mkdir -p dist
-zip -r dist/video-fast-chrome.zip manifest.json background content lib options popup icons
-zip -r dist/video-fast-firefox.zip manifest.json background content lib options popup icons
+zip -r dist/video-fast-chrome.zip manifest.json background content lib options popup icons _locales
+zip -r dist/video-fast-firefox.zip manifest.json background content lib options popup icons _locales
 ```
 
 ## Permissões usadas

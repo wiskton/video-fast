@@ -1,0 +1,86 @@
+{
+  "extName": {
+    "message": "Video Fast — Speed & Volume for Video",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Speeds up videos with a configurable default speed, boosts volume beyond the native max, and lets you ignore specific sites.",
+    "description": "Store listing description"
+  },
+
+  "popupSpeedLabel": {
+    "message": "Default speed"
+  },
+  "popupVolumeLabel": {
+    "message": "Volume gain"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "Current site"
+  },
+  "popupIgnoreBtn": {
+    "message": "Ignore"
+  },
+  "popupUnignoreBtn": {
+    "message": "Stop ignoring"
+  },
+  "popupMoreOptions": {
+    "message": "More options →"
+  },
+  "popupStatusDisabled": {
+    "message": "The extension is disabled."
+  },
+  "popupStatusIgnored": {
+    "message": "This site is on the ignore list."
+  },
+  "popupStatusActive": {
+    "message": "Videos will play at $SPEED$x, volume at $VOLUME$%.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — Settings"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — Settings"
+  },
+  "optionsSectionTitle": {
+    "message": "Video speed and volume"
+  },
+  "optionsEnableLabel": {
+    "message": "Enable automatic video speed-up"
+  },
+  "optionsSpeedLabel": {
+    "message": "Default speed applied to all videos"
+  },
+  "optionsVolumeLabel": {
+    "message": "Volume gain"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = normal video volume. Above 100% amplifies audio beyond the browser's native max (via the Web Audio API)."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "Ignored sites (one per line)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "Accepts a domain (\"example.com\"), a wildcard (\"*.example.com\"), or a URL snippet (\"example.com/path\"). Neither speed nor volume gain is changed on these sites."
+  },
+  "optionsSaveBtn": {
+    "message": "Save"
+  },
+  "optionsSavedHint": {
+    "message": "Saved!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — disabled"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — default speed $SPEED$x",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

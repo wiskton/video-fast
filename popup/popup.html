@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Video Fast</title>
@@ -16,7 +16,7 @@
 
     <main>
       <section class="vf-field">
-        <label for="speedInput">Velocidade padrão</label>
+        <label for="speedInput" data-i18n="popupSpeedLabel">Default speed</label>
         <div class="vf-speed-row">
           <input type="range" id="speedRange" min="0.25" max="8" step="0.25" />
           <input type="number" id="speedInput" min="0.1" max="16" step="0.05" />
@@ -25,7 +25,7 @@
       </section>
 
       <section class="vf-field">
-        <label for="volumeInput">Ganho de volume</label>
+        <label for="volumeInput" data-i18n="popupVolumeLabel">Volume gain</label>
         <div class="vf-speed-row">
           <input type="range" id="volumeRange" min="0" max="500" step="5" />
           <input type="number" id="volumeInput" min="0" max="500" step="5" />
@@ -36,17 +36,21 @@
       <section class="vf-field">
         <div class="vf-site-row">
           <div>
-            <div class="vf-site-label">Site atual</div>
+            <div class="vf-site-label" data-i18n="popupCurrentSiteLabel">Current site</div>
             <div class="vf-site-host" id="currentHost">—</div>
           </div>
-          <button type="button" id="toggleIgnoreBtn" class="vf-btn-secondary">Ignorar</button>
+          <button type="button" id="toggleIgnoreBtn" class="vf-btn-secondary" data-i18n="popupIgnoreBtn">
+            Ignore
+          </button>
         </div>
         <p class="vf-hint" id="statusHint"></p>
       </section>
     </main>
 
     <footer>
-      <button type="button" id="openOptionsBtn" class="vf-link-btn">Mais opções →</button>
+      <button type="button" id="openOptionsBtn" class="vf-link-btn" data-i18n="popupMoreOptions">
+        More options →
+      </button>
     </footer>
 
     <script type="module" src="popup.js"></script>

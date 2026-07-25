@@ -1,0 +1,86 @@
+{
+  "extName": {
+    "message": "Video Fast — Velocidad y Volumen de Video",
+    "description": "Nombre de la extensión"
+  },
+  "extDescription": {
+    "message": "Acelera videos con una velocidad predeterminada configurable, amplifica el volumen más allá del máximo nativo y permite ignorar sitios específicos.",
+    "description": "Descripción de la tienda"
+  },
+
+  "popupSpeedLabel": {
+    "message": "Velocidad predeterminada"
+  },
+  "popupVolumeLabel": {
+    "message": "Ganancia de volumen"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "Sitio actual"
+  },
+  "popupIgnoreBtn": {
+    "message": "Ignorar"
+  },
+  "popupUnignoreBtn": {
+    "message": "Dejar de ignorar"
+  },
+  "popupMoreOptions": {
+    "message": "Más opciones →"
+  },
+  "popupStatusDisabled": {
+    "message": "La extensión está desactivada."
+  },
+  "popupStatusIgnored": {
+    "message": "Este sitio está en la lista de excepciones."
+  },
+  "popupStatusActive": {
+    "message": "Los videos se reproducirán a $SPEED$x, volumen al $VOLUME$%.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — Configuración"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — Configuración"
+  },
+  "optionsSectionTitle": {
+    "message": "Velocidad y volumen de video"
+  },
+  "optionsEnableLabel": {
+    "message": "Activar la aceleración automática de videos"
+  },
+  "optionsSpeedLabel": {
+    "message": "Velocidad predeterminada aplicada a todos los videos"
+  },
+  "optionsVolumeLabel": {
+    "message": "Ganancia de volumen"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = volumen normal del video. Por encima del 100% amplifica el audio más allá del máximo nativo del navegador (mediante la Web Audio API)."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "Sitios ignorados (uno por línea)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "Acepta un dominio (\"ejemplo.com\"), un comodín (\"*.ejemplo.com\") o un fragmento de URL (\"ejemplo.com/ruta\"). En estos sitios no se modifica ni la velocidad ni la ganancia de volumen."
+  },
+  "optionsSaveBtn": {
+    "message": "Guardar"
+  },
+  "optionsSavedHint": {
+    "message": "¡Guardado!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — desactivado"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — velocidad predeterminada $SPEED$x",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}
