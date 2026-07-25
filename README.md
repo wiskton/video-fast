@@ -126,4 +126,3 @@ Todas as configurações ficam em `chrome.storage.local`, local à sua instalaç
   visualizador de áudio), o ganho de volume da extensão pode não funcionar nesse
   vídeo específico, já que um elemento de mídia só pode ser conectado a um
   `MediaElementSourceNode` por vez.
-c
