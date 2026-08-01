@@ -26,6 +26,24 @@
   "popupMoreOptions": {
     "message": "More options →"
   },
+  "popupSupportTitle": {
+    "message": "Enjoying the extension? ❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "You can support it by donating Bitcoin:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "Copy address"
+  },
+  "popupSupportCopied": {
+    "message": "Address copied!"
+  },
+  "popupSupportFollowLabel": {
+    "message": "Follow me"
+  },
+  "popupSupportCredit": {
+    "message": "Made by wiskton"
+  },
   "popupStatusDisabled": {
     "message": "The extension is disabled."
   },

@@ -158,3 +158,69 @@ footer {
 .vf-switch input:checked + .vf-slider::before {
   transform: translateX(16px);
 }
+
+.vf-support {
+  border-top: 1px solid #2c2c33;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.vf-support-title {
+  margin: 0 0 4px;
+  font-size: 13px;
+}
+
+.vf-support-text {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #adadb8;
+}
+
+.vf-btc-address {
+  display: block;
+  width: 100%;
+  background-color: #0e0e10;
+  color: #efeff1;
+  border: 1px solid #34343a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+  line-height: 1.4;
+  cursor: pointer;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+.vf-btc-address:hover {
+  border-color: #9147ff;
+}
+
+.vf-support-follow-label {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #adadb8;
+}
+
+.vf-social-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.vf-social-row a {
+  color: #bf94ff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.vf-social-row a:hover {
+  text-decoration: underline;
+}
+
+.vf-support-credit {
+  margin: 0;
+  font-size: 10px;
+  color: #6d6d78;
+}

@@ -1,0 +1,104 @@
+{
+  "extName": {
+    "message": "Video Fast — Скорость и громкость",
+    "description": "Название расширения"
+  },
+  "extDescription": {
+    "message": "Автоматически ускоряет видео с настраиваемой скоростью по умолчанию, усиливает громкость сверх нативного максимума браузера и позволяет исключать отдельные сайты.",
+    "description": "Описание в магазине"
+  },
+
+  "popupSpeedLabel": {
+    "message": "Скорость по умолчанию"
+  },
+  "popupVolumeLabel": {
+    "message": "Усиление громкости"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "Текущий сайт"
+  },
+  "popupIgnoreBtn": {
+    "message": "Игнорировать"
+  },
+  "popupUnignoreBtn": {
+    "message": "Не игнорировать"
+  },
+  "popupMoreOptions": {
+    "message": "Дополнительные настройки →"
+  },
+  "popupSupportTitle": {
+    "message": "Нравится расширение? ❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "Вы можете поддержать проект, пожертвовав Bitcoin:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "Скопировать адрес"
+  },
+  "popupSupportCopied": {
+    "message": "Адрес скопирован!"
+  },
+  "popupSupportFollowLabel": {
+    "message": "Подписаться"
+  },
+  "popupSupportCredit": {
+    "message": "Разработано wiskton"
+  },
+  "popupStatusDisabled": {
+    "message": "Расширение отключено."
+  },
+  "popupStatusIgnored": {
+    "message": "Этот сайт находится в списке исключений."
+  },
+  "popupStatusActive": {
+    "message": "Видео будут воспроизводиться со скоростью $SPEED$x, громкость $VOLUME$%.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — Настройки"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — Настройки"
+  },
+  "optionsSectionTitle": {
+    "message": "Скорость и громкость видео"
+  },
+  "optionsEnableLabel": {
+    "message": "Включить автоматическое ускорение видео"
+  },
+  "optionsSpeedLabel": {
+    "message": "Скорость по умолчанию, применяемая ко всем видео"
+  },
+  "optionsVolumeLabel": {
+    "message": "Усиление громкости"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = обычная громкость видео. Выше 100% звук усиливается сверх нативного максимума браузера (через Web Audio API)."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "Игнорируемые сайты (по одному на строку)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "Допускается домен (\"example.com\"), маска (\"*.example.com\") или часть URL (\"example.com/path\"). На этих сайтах не изменяются ни скорость, ни усиление громкости."
+  },
+  "optionsSaveBtn": {
+    "message": "Сохранить"
+  },
+  "optionsSavedHint": {
+    "message": "Сохранено!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — отключено"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — скорость по умолчанию $SPEED$x",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

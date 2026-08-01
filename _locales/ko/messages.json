@@ -1,0 +1,104 @@
+{
+  "extName": {
+    "message": "Video Fast — 속도 및 볼륨",
+    "description": "확장 프로그램 이름"
+  },
+  "extDescription": {
+    "message": "설정 가능한 기본 속도로 동영상을 자동으로 빠르게 재생하고, 브라우저 기본 최대치를 넘어 볼륨을 높이며, 특정 사이트를 제외할 수 있습니다.",
+    "description": "스토어 목록 설명"
+  },
+
+  "popupSpeedLabel": {
+    "message": "기본 속도"
+  },
+  "popupVolumeLabel": {
+    "message": "볼륨 증폭"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "현재 사이트"
+  },
+  "popupIgnoreBtn": {
+    "message": "무시"
+  },
+  "popupUnignoreBtn": {
+    "message": "무시 해제"
+  },
+  "popupMoreOptions": {
+    "message": "더 많은 옵션 →"
+  },
+  "popupSupportTitle": {
+    "message": "확장 프로그램이 마음에 드시나요? ❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "비트코인으로 후원할 수 있습니다:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "주소 복사"
+  },
+  "popupSupportCopied": {
+    "message": "주소가 복사되었습니다!"
+  },
+  "popupSupportFollowLabel": {
+    "message": "팔로우하기"
+  },
+  "popupSupportCredit": {
+    "message": "wiskton 제작"
+  },
+  "popupStatusDisabled": {
+    "message": "확장 프로그램이 비활성화되어 있습니다."
+  },
+  "popupStatusIgnored": {
+    "message": "이 사이트는 예외 목록에 있습니다."
+  },
+  "popupStatusActive": {
+    "message": "동영상이 $SPEED$배 속도, 볼륨 $VOLUME$%로 재생됩니다.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — 설정"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — 설정"
+  },
+  "optionsSectionTitle": {
+    "message": "동영상 속도 및 볼륨"
+  },
+  "optionsEnableLabel": {
+    "message": "자동 동영상 속도 향상 활성화"
+  },
+  "optionsSpeedLabel": {
+    "message": "모든 동영상에 적용되는 기본 속도"
+  },
+  "optionsVolumeLabel": {
+    "message": "볼륨 증폭"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = 동영상 기본 볼륨. 100%를 초과하면 Web Audio API를 통해 브라우저 기본 최대치를 넘어 오디오를 증폭합니다."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "무시할 사이트 (한 줄에 하나씩)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "도메인(\"example.com\"), 와일드카드(\"*.example.com\") 또는 URL 일부(\"example.com/path\")를 입력할 수 있습니다. 이 사이트에서는 속도와 볼륨 증폭이 모두 변경되지 않습니다."
+  },
+  "optionsSaveBtn": {
+    "message": "저장"
+  },
+  "optionsSavedHint": {
+    "message": "저장됨!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — 비활성화됨"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — 기본 속도 $SPEED$배",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

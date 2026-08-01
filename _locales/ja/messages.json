@@ -1,0 +1,104 @@
+{
+  "extName": {
+    "message": "Video Fast — 速度と音量",
+    "description": "拡張機能の名前"
+  },
+  "extDescription": {
+    "message": "設定可能なデフォルト速度で動画を自動的に高速再生し、ブラウザのネイティブ上限を超えて音量を増幅、特定のサイトを除外できます。",
+    "description": "ストア掲載の説明"
+  },
+
+  "popupSpeedLabel": {
+    "message": "デフォルト速度"
+  },
+  "popupVolumeLabel": {
+    "message": "音量増幅"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "現在のサイト"
+  },
+  "popupIgnoreBtn": {
+    "message": "除外"
+  },
+  "popupUnignoreBtn": {
+    "message": "除外を解除"
+  },
+  "popupMoreOptions": {
+    "message": "その他のオプション →"
+  },
+  "popupSupportTitle": {
+    "message": "拡張機能を気に入っていただけましたか？❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "ビットコインで寄付してサポートできます:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "アドレスをコピー"
+  },
+  "popupSupportCopied": {
+    "message": "アドレスをコピーしました！"
+  },
+  "popupSupportFollowLabel": {
+    "message": "フォローする"
+  },
+  "popupSupportCredit": {
+    "message": "wiskton 制作"
+  },
+  "popupStatusDisabled": {
+    "message": "拡張機能は無効になっています。"
+  },
+  "popupStatusIgnored": {
+    "message": "このサイトは除外リストに含まれています。"
+  },
+  "popupStatusActive": {
+    "message": "動画は $SPEED$ 倍速、音量 $VOLUME$% で再生されます。",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — 設定"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — 設定"
+  },
+  "optionsSectionTitle": {
+    "message": "動画の速度と音量"
+  },
+  "optionsEnableLabel": {
+    "message": "動画の自動高速再生を有効にする"
+  },
+  "optionsSpeedLabel": {
+    "message": "すべての動画に適用するデフォルト速度"
+  },
+  "optionsVolumeLabel": {
+    "message": "音量増幅"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = 動画の通常音量。100%を超えると、Web Audio API によりブラウザのネイティブ上限を超えて音声を増幅します。"
+  },
+  "optionsIgnoreListLabel": {
+    "message": "除外するサイト（1行に1つ）"
+  },
+  "optionsIgnoreListHint": {
+    "message": "ドメイン（\"example.com\"）、ワイルドカード（\"*.example.com\"）、または URL の一部（\"example.com/path\"）を指定できます。これらのサイトでは速度も音量増幅も変更されません。"
+  },
+  "optionsSaveBtn": {
+    "message": "保存"
+  },
+  "optionsSavedHint": {
+    "message": "保存しました！"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — 無効"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — デフォルト速度 $SPEED$ 倍",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

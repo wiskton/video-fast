@@ -35,9 +35,9 @@ código-fonte (JavaScript puro, sem bundler, sem dependências externas).
   removidos a qualquer momento.
 - **Badge no ícone da barra de ferramentas** mostrando a velocidade padrão atual (ex:
   `2x`), ou `OFF` quando a extensão está desativada.
-- **Interface em português, inglês e espanhol**, escolhida automaticamente pelo idioma
-  configurado no navegador (padrão de internacionalização nativo do Chrome/Firefox,
-  arquivos em `_locales/`).
+- **Interface em português, inglês, espanhol, coreano, chinês, italiano, japonês e
+  russo**, escolhida automaticamente pelo idioma configurado no navegador (padrão de
+  internacionalização nativo do Chrome/Firefox, arquivos em `_locales/`).
 
 ## Como usar
 
@@ -97,6 +97,11 @@ tradução completa (nome/descrição na loja, popup e página de opções) em:
 - Português do Brasil (`_locales/pt_BR`)
 - Inglês (`_locales/en`) — idioma padrão de fallback (`default_locale`)
 - Espanhol (`_locales/es`)
+- Coreano (`_locales/ko`)
+- Chinês simplificado (`_locales/zh_CN`)
+- Italiano (`_locales/it`)
+- Japonês (`_locales/ja`)
+- Russo (`_locales/ru`)
 
 Para adicionar outro idioma, crie `_locales/<código>/messages.json` copiando a
 estrutura de `_locales/en/messages.json` e traduzindo o campo `"message"` de cada

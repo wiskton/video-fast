@@ -26,6 +26,24 @@
   "popupMoreOptions": {
     "message": "Más opciones →"
   },
+  "popupSupportTitle": {
+    "message": "¿Te gusta la extensión? ❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "Puedes apoyar donando Bitcoin:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "Copiar dirección"
+  },
+  "popupSupportCopied": {
+    "message": "¡Dirección copiada!"
+  },
+  "popupSupportFollowLabel": {
+    "message": "Sígueme"
+  },
+  "popupSupportCredit": {
+    "message": "Hecho por wiskton"
+  },
   "popupStatusDisabled": {
     "message": "La extensión está desactivada."
   },

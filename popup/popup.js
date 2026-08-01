@@ -11,6 +11,7 @@ const els = {
   toggleIgnoreBtn: document.getElementById("toggleIgnoreBtn"),
   statusHint: document.getElementById("statusHint"),
   openOptionsBtn: document.getElementById("openOptionsBtn"),
+  btcAddressBtn: document.getElementById("btcAddressBtn"),
 };
 
 let settings = { vf_enabled: true, vf_defaultSpeed: 2, vf_volumeGain: 100, vf_ignoreList: [] };
@@ -123,6 +124,19 @@ els.toggleIgnoreBtn.addEventListener("click", async () => {
 
 els.openOptionsBtn.addEventListener("click", () => {
   ext.runtime.openOptionsPage();
+});
+
+els.btcAddressBtn.addEventListener("click", async () => {
+  const address = els.btcAddressBtn.dataset.address;
+  try {
+    await navigator.clipboard.writeText(address);
+    els.btcAddressBtn.textContent = t("popupSupportCopied");
+    setTimeout(() => {
+      els.btcAddressBtn.textContent = address;
+    }, 1500);
+  } catch {
+    // Clipboard API unavailable; nothing to fall back to.
+  }
 });
 
 (async function init() {

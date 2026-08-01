@@ -1,0 +1,104 @@
+{
+  "extName": {
+    "message": "Video Fast — Velocità e Volume",
+    "description": "Nome dell'estensione"
+  },
+  "extDescription": {
+    "message": "Accelera i video con una velocità predefinita configurabile, amplifica il volume oltre il massimo nativo e permette di ignorare siti specifici.",
+    "description": "Descrizione dello store"
+  },
+
+  "popupSpeedLabel": {
+    "message": "Velocità predefinita"
+  },
+  "popupVolumeLabel": {
+    "message": "Guadagno volume"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "Sito attuale"
+  },
+  "popupIgnoreBtn": {
+    "message": "Ignora"
+  },
+  "popupUnignoreBtn": {
+    "message": "Non ignorare più"
+  },
+  "popupMoreOptions": {
+    "message": "Altre opzioni →"
+  },
+  "popupSupportTitle": {
+    "message": "Ti piace l'estensione? ❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "Puoi supportarla donando Bitcoin:"
+  },
+  "popupSupportCopyTitle": {
+    "message": "Copia indirizzo"
+  },
+  "popupSupportCopied": {
+    "message": "Indirizzo copiato!"
+  },
+  "popupSupportFollowLabel": {
+    "message": "Seguimi"
+  },
+  "popupSupportCredit": {
+    "message": "Realizzato da wiskton"
+  },
+  "popupStatusDisabled": {
+    "message": "L'estensione è disattivata."
+  },
+  "popupStatusIgnored": {
+    "message": "Questo sito è nell'elenco delle eccezioni."
+  },
+  "popupStatusActive": {
+    "message": "I video verranno riprodotti a $SPEED$x, volume al $VOLUME$%.",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — Impostazioni"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — Impostazioni"
+  },
+  "optionsSectionTitle": {
+    "message": "Velocità e volume del video"
+  },
+  "optionsEnableLabel": {
+    "message": "Attiva l'accelerazione automatica dei video"
+  },
+  "optionsSpeedLabel": {
+    "message": "Velocità predefinita applicata a tutti i video"
+  },
+  "optionsVolumeLabel": {
+    "message": "Guadagno volume"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = volume normale del video. Oltre il 100% amplifica l'audio oltre il massimo nativo del browser (tramite Web Audio API)."
+  },
+  "optionsIgnoreListLabel": {
+    "message": "Siti ignorati (uno per riga)"
+  },
+  "optionsIgnoreListHint": {
+    "message": "Accetta un dominio (\"example.com\"), un carattere jolly (\"*.example.com\") o un frammento di URL (\"example.com/percorso\"). Su questi siti non vengono modificati né la velocità né il guadagno di volume."
+  },
+  "optionsSaveBtn": {
+    "message": "Salva"
+  },
+  "optionsSavedHint": {
+    "message": "Salvato!"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — disattivato"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — velocità predefinita $SPEED$x",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}

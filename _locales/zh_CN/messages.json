@@ -1,0 +1,104 @@
+{
+  "extName": {
+    "message": "Video Fast — 速度与音量",
+    "description": "扩展程序名称"
+  },
+  "extDescription": {
+    "message": "以可配置的默认速度自动加速视频播放，将音量放大超过浏览器原生上限，并可忽略指定网站。",
+    "description": "商店列表描述"
+  },
+
+  "popupSpeedLabel": {
+    "message": "默认速度"
+  },
+  "popupVolumeLabel": {
+    "message": "音量增益"
+  },
+  "popupCurrentSiteLabel": {
+    "message": "当前网站"
+  },
+  "popupIgnoreBtn": {
+    "message": "忽略"
+  },
+  "popupUnignoreBtn": {
+    "message": "取消忽略"
+  },
+  "popupMoreOptions": {
+    "message": "更多选项 →"
+  },
+  "popupSupportTitle": {
+    "message": "喜欢这个扩展吗？❤️"
+  },
+  "popupSupportBtcLabel": {
+    "message": "你可以通过捐赠比特币来支持它："
+  },
+  "popupSupportCopyTitle": {
+    "message": "复制地址"
+  },
+  "popupSupportCopied": {
+    "message": "地址已复制！"
+  },
+  "popupSupportFollowLabel": {
+    "message": "关注我"
+  },
+  "popupSupportCredit": {
+    "message": "由 wiskton 开发"
+  },
+  "popupStatusDisabled": {
+    "message": "扩展已禁用。"
+  },
+  "popupStatusIgnored": {
+    "message": "此网站在忽略列表中。"
+  },
+  "popupStatusActive": {
+    "message": "视频将以 $SPEED$ 倍速播放，音量为 $VOLUME$%。",
+    "placeholders": {
+      "speed": { "content": "$1" },
+      "volume": { "content": "$2" }
+    }
+  },
+
+  "optionsHeading": {
+    "message": "⚡ Video Fast — 设置"
+  },
+  "optionsPageTitle": {
+    "message": "Video Fast — 设置"
+  },
+  "optionsSectionTitle": {
+    "message": "视频速度与音量"
+  },
+  "optionsEnableLabel": {
+    "message": "启用自动视频加速"
+  },
+  "optionsSpeedLabel": {
+    "message": "应用于所有视频的默认速度"
+  },
+  "optionsVolumeLabel": {
+    "message": "音量增益"
+  },
+  "optionsVolumeHint": {
+    "message": "100% = 视频正常音量。超过 100% 时会通过 Web Audio API 将音频放大到超过浏览器原生上限。"
+  },
+  "optionsIgnoreListLabel": {
+    "message": "忽略的网站（每行一个）"
+  },
+  "optionsIgnoreListHint": {
+    "message": "支持域名（\"example.com\"）、通配符（\"*.example.com\"）或 URL 片段（\"example.com/path\"）。在这些网站上，速度和音量增益均不会更改。"
+  },
+  "optionsSaveBtn": {
+    "message": "保存"
+  },
+  "optionsSavedHint": {
+    "message": "已保存！"
+  },
+
+  "badgeDisabledTitle": {
+    "message": "Video Fast — 已禁用"
+  },
+  "badgeActiveTitle": {
+    "message": "Video Fast — 默认速度 $SPEED$ 倍",
+    "placeholders": {
+      "speed": { "content": "$1" }
+    }
+  }
+}
