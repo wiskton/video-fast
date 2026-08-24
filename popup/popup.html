@@ -8,28 +8,58 @@
   <body>
     <header class="vf-header">
       <span class="vf-logo">⚡ Video Fast</span>
-      <label class="vf-switch">
-        <input type="checkbox" id="enabledToggle" />
-        <span class="vf-slider"></span>
-      </label>
+      <div class="vf-header-actions">
+        <button type="button" id="viewToggle" class="vf-view-toggle" title="Alternar visualização" aria-label="Alternar layout">⇄</button>
+        <label class="vf-switch">
+          <input type="checkbox" id="enabledToggle" />
+          <span class="vf-slider"></span>
+        </label>
+      </div>
     </header>
 
     <main>
       <section class="vf-field">
         <label for="speedInput" data-i18n="popupSpeedLabel">Default speed</label>
-        <div class="vf-speed-row">
+        <div id="speedBarView" class="vf-speed-row">
           <input type="range" id="speedRange" min="0.25" max="8" step="0.25" />
           <input type="number" id="speedInput" min="0.1" max="16" step="0.05" />
           <span>x</span>
+        </div>
+        <div id="speedBtnView" hidden>
+          <div class="vf-preset-btns">
+            <button type="button" class="vf-preset-btn" data-speed="1">1x</button>
+            <button type="button" class="vf-preset-btn" data-speed="1.25">1.25x</button>
+            <button type="button" class="vf-preset-btn" data-speed="1.5">1.5x</button>
+            <button type="button" class="vf-preset-btn" data-speed="1.75">1.75x</button>
+            <button type="button" class="vf-preset-btn" data-speed="2">2x</button>
+          </div>
+          <div class="vf-custom-row">
+            <input type="number" id="speedCustomInput" min="0.1" max="16" step="0.05" placeholder="valor personalizado" />
+            <span>x</span>
+            <button type="button" id="speedCustomApply" class="vf-apply-btn">OK</button>
+          </div>
         </div>
       </section>
 
       <section class="vf-field">
         <label for="volumeInput" data-i18n="popupVolumeLabel">Volume gain</label>
-        <div class="vf-speed-row">
+        <div id="volumeBarView" class="vf-speed-row">
           <input type="range" id="volumeRange" min="0" max="500" step="5" />
           <input type="number" id="volumeInput" min="0" max="500" step="5" />
           <span>%</span>
+        </div>
+        <div id="volumeBtnView" hidden>
+          <div class="vf-preset-btns">
+            <button type="button" class="vf-preset-btn" data-volume="100">100%</button>
+            <button type="button" class="vf-preset-btn" data-volume="200">200%</button>
+            <button type="button" class="vf-preset-btn" data-volume="300">300%</button>
+            <button type="button" class="vf-preset-btn" data-volume="400">400%</button>
+          </div>
+          <div class="vf-custom-row">
+            <input type="number" id="volumeCustomInput" min="0" max="500" step="5" placeholder="valor personalizado" />
+            <span>%</span>
+            <button type="button" id="volumeCustomApply" class="vf-apply-btn">OK</button>
+          </div>
         </div>
       </section>
 

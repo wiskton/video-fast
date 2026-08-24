@@ -38,10 +38,104 @@ main {
   margin-bottom: 6px;
 }
 
+.vf-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vf-view-toggle {
+  background: none;
+  border: 1px solid #3a3a41;
+  border-radius: 4px;
+  color: #adadb8;
+  font-size: 13px;
+  line-height: 1;
+  padding: 2px 6px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.vf-view-toggle:hover {
+  color: #bf94ff;
+  border-color: #bf94ff;
+}
+
 .vf-speed-row {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.vf-preset-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.vf-preset-btn {
+  flex: 1;
+  background-color: #26262c;
+  color: #efeff1;
+  border: 1px solid #3a3a41;
+  border-radius: 4px;
+  padding: 6px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.vf-preset-btn:hover {
+  background-color: #323238;
+  border-color: #bf94ff;
+}
+
+.vf-preset-btn.active {
+  background-color: #9147ff;
+  border-color: #9147ff;
+  color: #fff;
+}
+
+.vf-custom-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.vf-custom-row input[type="number"] {
+  flex: 1;
+  background-color: #0e0e10;
+  color: #efeff1;
+  border: 1px solid #34343a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.vf-custom-row input[type="number"]:focus {
+  outline: none;
+  border-color: #9147ff;
+}
+
+.vf-apply-btn {
+  background-color: #9147ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.vf-apply-btn:hover {
+  background-color: #772ce8;
 }
 
 .vf-speed-row input[type="range"] {
