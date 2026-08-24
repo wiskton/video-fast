@@ -36,9 +36,14 @@
 
   "permissions": ["storage", "activeTab"],
 
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["lib/browser-api.content.js", "content/video-speed.js"],
       "run_at": "document_idle",
       "all_frames": true
